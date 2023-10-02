@@ -3,4 +3,4 @@
 
 Aprendizado de criação de sites e gerenciar repositórios!
 
-<a href="https://augustobianchi.github.io/html-css/DESAFIOS/desafio010/siteReformulado.html">Executar exercicios 010</a>
+<a href="https://augustobianchi.github.io/html-css/DESAFIOS/desafio010/siteReformulado.html" target="_blank">Executar exercicios 010</a>
