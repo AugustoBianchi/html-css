@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexiveis</title>
+</head>
+<body>
+    <h1>Flexibilidade nas imagens</h1><hr>
+
+    <picture> 
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <!--750px é o tamanho da img M, com isso quando o navegador chegar nessa medida máxima, com essa tag source ela reduz para a imagem P-->
+        <source media="(max-width: 1210px)" srcset="imagens/paisagem-m.png" type="image/png"> 
+        <!--1210px é o tamanho da img G, com isso quando o navegador chegar nessa medida máxima, com essa tag source ela reduz para a imagem M-->
+        <img src="imagens/paisagem-g.png" alt="imagem grande">   <!--Coloca-se a imagem maior na Tag "img"-->
+    </picture>
+</body>
+</html>
