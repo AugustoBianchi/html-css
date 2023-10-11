@@ -9,10 +9,15 @@
 :root{
     --fonte1:'Passion One', 'cursive';
     --fonte2: 'Sriracha', 'cursive';
+    --fonte3: Verdana, Geneva, Tahoma, sans-serif;
+    --imagem1: url(../zip/imagens/background001.jpg);
+    --imagem2: url(../zip/imagens/background002.jpg);
+    
 }
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte3);
 }
 
 header{
@@ -27,6 +32,7 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 header>p{
     padding-bottom: 50px;
@@ -40,6 +46,18 @@ a:hover{
     text-decoration: underline;
 }
 
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+
+}
+
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -48,23 +66,32 @@ section.normal{
 section.imagem{
     background-color: rgb(38, 38, 38);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.375);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.282);
+    text-shadow: 2px 1px 0px rgb(0, 0, 0);
+  
 }
 
 main{
     font-family: var(--fonte2);
 }
 
-div.q1{
-    color: white;
-    background-size: cover;
-    background: black url('../zip/imagens/background001.jpg') center center no-repeat fixed;
-    padding: 50px 10px;   
+section#img01 {
+    background-image: var(--imagem1);
+    background-position: right center;
+    
+
 }
 
-div.q2{
-    background-size: cover;
-    background: black url('../zip/imagens/background002.jpg') center center no-repeat fixed;
-    padding: 50px 10px;
+section#img02 {
+    background-image: var(--imagem2);
 }
 
 footer{
